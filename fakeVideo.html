@@ -10,6 +10,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
     <link href="fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
     <link href="css/templatemo-business-oriented.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/imgUpload.css">
 </head>
 <!--
 
@@ -25,12 +26,13 @@ https://templatemo.com/tm-549-business-oriented
                 <div class="col-12">
                     <div class="tm-logo">
                         <i class="fas fa-industry fa-5x mr-5"></i>
-                        <span class="text-uppercase tm-logo-text">Business Oriented</span>
+                        <span class="text-uppercase tm-logo-text">Forge Interceptor</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="tm-nav-container-outer">
         <div class="container-fluid">
             <div class="row">
@@ -62,60 +64,38 @@ https://templatemo.com/tm-549-business-oriented
         </div>
     </div>
 
-    <div class="container-fluid mt-7">
+    
+        <div class="container-fluid mt-7">
         <div class="row mb-6">
-            <div class="col-lg-7 mb-lg-0 mb-5 pr-lg-5">
+            <div class="col-lg-12 mb-lg-0 mb-5 pr-lg-12">
                 <section class="mb-10">
-                    <div>
-                        <h3 class="tm-title-gray mb-4">Our services for your business growth</h3>
-                        <hr class="mb-5 tm-hr">
-                        <p class="mb-5">This is another HTML page for services in Business Oriented Template. You are
-                            <span class="tm-text-primary">allowed</span> to use this CSS template for your business or
-                            personal website. You are <span class="tm-text-primary">NOT allowed</span> to re-distribute
-                            the template ZIP file on any template collection website.
-                            <a href="https://templatemo.com/contact" class="tm-text-primary-link">Contact us</a> for
-                            more information about this template.
-                        </p>
-                        <p class="mb-5">Nulla eget ipsum nec augue semper convallis non a lacus. Integer vel condimentum
-                            neque. Fusce sollicitudin arcu et tortor lobortis rhoncus. Morbi accumsan efficitur nunc, in
-                            faucibus velit pretium quis. Sed elementum auctor felis eu tristique.</p>
-                    </div>
-                </section>
-                <section>
-                    <h3 class="tm-title-gray mb-4">Professional Business Services</h3>
-                    <hr class="mb-5 tm-hr">
-                    <div class="tm-services-box mb-60">
-                        <img src="img/services-2.jpg" alt="Image" class="img-fluid tm-services-img">
-                        <div>
-                            <h4 class="tm-text-primary mb-4">Maecenas molestie varius ipsum</h4>
-                            <p class="tm-strategy-text">Donec mauris eros, suscipit fermentum faucibus sagittis, dictum
-                                eget nulla. Duis maximus porttitor ornare. Maecenas blandit vestibulum massa at
-                                accumsan. Duis ultricies mi id justo porttitor, et sollicitudin justo vehicula.</p>
-                        </div>
-                    </div>
-                    <div class="tm-services-box mb-5">
-                        <img src="img/services-3.jpg" alt="Image" class="img-fluid tm-services-img">
-                        <div>
-                            <h4 class="tm-text-primary mb-4">Sed elementum justo in pulvinar</h4>
-                            <p class="tm-strategy-text">Sed non tellus vestibulum, tincidunt risus a, semper erat.
-                                Aliquam porta leo eget faucibus consectetur. Nam mauris felis, consectetur non cursus
-                                sit amet, pellentesque ac leo. Aliquam at dolor du velit scelerisque fringilla.</p>
+                    <div class="wrapper">
+                         <div class="container">
+                            <h1>Upload a file</h1>
+                                <div class="upload-container">
+                                   <div class="border-container">
+                                        <div class="icons fa-4x">
+                                            <i class="fas fa-file-video" data-fa-transform="shrink-3 down-2 left-6 rotate--45"></i>
+                                            
+                                        </div>
+                                        <!--<input type="file" id="file-upload">-->
+                                        <p>Click on the "Choose File" button to upload a file:</p>
+
+                                        <form method="post" enctype="multipart/form-data" action="fakeimage.php">
+                                        <input type="file" id="myFile" name="filename">
+                                        <input type="submit">
+                                        </form>
+                                    </div>
+
+                                </div>
                         </div>
                     </div>
                 </section>
+                
             </div>
-            <div class="col-lg-5">
-                <img src="img/services-1.jpg" alt="Image" class="img-fluid">
-                <div class="tm-bg-gray-dark tm-box-2">
-                    <h4 class="tm-text-primary tm-h3 mb-4">Fusce sollicitudin arcu et tortor</h4>
-                    <p class="mb-5">Cras rhoncus tempor consequat. Donec convallis orci id scelerisque convallis. Suspendisse varius sapien mauris.</p>
-                    <p class="mb-5">Quisque accumsan lorem sed bibendum vehicula. Aenean gravida, nunc ac bibendum bibendum.</p>
-                    <p>Donec convallis orci id scelerisque convallis. Suspendisse varius sapien mauris. Proin accumsan.</p>
-                </div>
-            </div>
+            
         </div>
     </div>
-
 
     <footer class="container-fluid">
         <div class="row">
@@ -134,6 +114,7 @@ https://templatemo.com/tm-549-business-oriented
         </div>
     </footer>
 
+    <script type="text/javascript" src="js/imgUpload.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/parallax.min.js"></script> <!-- https://pixelcog.github.io/parallax.js/ -->
