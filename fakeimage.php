@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fake</title>
 <?php
-$target_dir = "E:\SIH\/";
+$target_dir = "forgeInterceptor/testImages/\";
 $target_file = $target_dir . basename($_FILES["file"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
